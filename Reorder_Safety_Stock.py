@@ -4,7 +4,7 @@ start = time.time()
 import pandas as pd
 import numpy as np
 from scipy import stats
-NormalDist = norm
+NormalDist = stats.norm
 from termcolor import colored
 @st.cache_resource
 def re_oreder(df_forecast):
