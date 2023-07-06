@@ -3,7 +3,7 @@ import time
 start = time.time()
 import pandas as pd
 import numpy as np
-import scipy.stats as stats
+from scipy import stats
 NormalDist = norm
 from termcolor import colored
 @st.cache_resource
