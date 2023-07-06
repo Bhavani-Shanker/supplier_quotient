@@ -3,13 +3,10 @@ start = time.time()
 import pandas as pd
 import numpy as np
 
-try:
-    import scipy.stats as stats
-except ImportError:
-    import scipy
-    stats = scipy.stats 
+from scipy.stats import norm
+NormalDist = norm
 from termcolor import colored
-NormalDist = stats.norm
+
 def re_oreder(df_forecast):
     df_forecast["pred_val"] = round(df_forecast["pred_val"],0)
     df_sub = df_forecast.copy(deep=True)
