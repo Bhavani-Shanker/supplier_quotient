@@ -6,7 +6,7 @@ import numpy as np
 try:
     import scipy.stats as stats
 except ImportError:
-    import scipy.stats
+    import scipy
     stats = scipy.stats 
 from termcolor import colored
 NormalDist = stats.norm
