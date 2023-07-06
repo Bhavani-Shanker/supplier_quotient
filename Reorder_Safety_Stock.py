@@ -3,7 +3,7 @@ start = time.time()
 import pandas as pd
 import numpy as np
 
-import scipy.stats as stats 
+import scipy.stats.stats 
 from termcolor import colored
 NormalDist = stats.norm
 def re_oreder(df_forecast):
