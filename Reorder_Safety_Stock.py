@@ -2,6 +2,7 @@ import time
 start = time.time()
 import pandas as pd
 import numpy as np
+import scipy
 from scipy import stats 
 from termcolor import colored
 NormalDist = stats.norm
