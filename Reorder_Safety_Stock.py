@@ -1,19 +1,12 @@
+import streamlit as st
 import time
 start = time.time()
 import pandas as pd
 import numpy as np
-
-try:
-    import scipy.stats as stats
-except ImportError:
-    import sys
-    # Install scipy package if it's not available
-    !{sys.executable} -m pip install scipy
-    import scipy.stats as stats
-
+import scipy.stats as stats
 NormalDist = norm
 from termcolor import colored
-
+@st.cache_resource
 def re_oreder(df_forecast):
     df_forecast["pred_val"] = round(df_forecast["pred_val"],0)
     df_sub = df_forecast.copy(deep=True)
@@ -80,6 +73,9 @@ def re_oreder(df_forecast):
     end = time.time() - start
     print(f'Finished in {round(end, 2)} second(s)')
     return df_final
+
+if __name__=="__main__":
+    main()
 '''
 df_final = re_oreder(df_forecast)
 
