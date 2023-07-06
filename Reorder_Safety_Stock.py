@@ -3,7 +3,14 @@ start = time.time()
 import pandas as pd
 import numpy as np
 
-from scipy.stats import norm
+try:
+    import scipy.stats as stats
+except ImportError:
+    import sys
+    # Install scipy package if it's not available
+    !{sys.executable} -m pip install scipy
+    import scipy.stats as stats
+
 NormalDist = norm
 from termcolor import colored
 
