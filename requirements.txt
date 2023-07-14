@@ -1,0 +1,5 @@
+scipy
+termcolor
+scikit-learn
+evalml
+multiprocess
