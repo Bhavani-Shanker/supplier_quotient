@@ -3,3 +3,6 @@ termcolor
 scikit-learn
 evalml
 multiprocess
+numpy
+numba
+pillow
