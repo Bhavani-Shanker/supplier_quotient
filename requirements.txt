@@ -1,8 +1,8 @@
-scipy
-termcolor
+scipy==1.9.3
+termcolor==2.3.0
 scikit-learn
-evalml
-multiprocess
-numpy
-numba
-pillow
+evalml==0.74.0
+multiprocess==0.70.14
+numpy==1.21.3
+numba==0.55.2
+pillow==9.2.0
