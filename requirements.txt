@@ -7,3 +7,4 @@ numpy==1.21.3
 numba==0.55.2
 pillow==9.2.0
 dask[distributed]
+Streamlit==1.37.1 
