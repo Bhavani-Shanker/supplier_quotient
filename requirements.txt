@@ -6,3 +6,4 @@ multiprocess==0.70.14
 numpy==1.21.3
 numba==0.55.2
 pillow==9.2.0
+dask[distributed]
